@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/CPU/singleCPU/Left_2_Shifter.xst" -ofn "D:/CPU/singleCPU/Left_2_Shifter.syr" 
+xst -intstyle ise -ifn "D:/CPU/singleCPU/Left_2_Shifter.xst" -ofn "D:/CPU/singleCPU/Left_2_Shifter.syr" 
+xst -intstyle ise -ifn "D:/CPU/singleCPU/Left_2_Shifter.xst" -ofn "D:/CPU/singleCPU/Left_2_Shifter.syr" 
+xst -intstyle ise -ifn "D:/CPU/singleCPU/Left_2_Shifter.xst" -ofn "D:/CPU/singleCPU/Left_2_Shifter.syr" 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Lenovo/Desktop/singleCPU/computer_test_isim_beh.exe" -prj "C:/Users/Lenovo/Desktop/singleCPU/computer_test_beh.prj" "work.computer_test" "work.glbl" 

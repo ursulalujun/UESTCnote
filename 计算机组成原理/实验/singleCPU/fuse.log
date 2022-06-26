@@ -1,0 +1,48 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Lenovo/Desktop/singleCPU/computer_test_isim_beh.exe -prj C:/Users/Lenovo/Desktop/singleCPU/computer_test_beh.prj work.computer_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/Mycode/MUX32_2_1.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/Mycode/Left_2_Shifter.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/Mycode/Control.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/Mycode/ALUop.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/Mycode/ADD32.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/Sign_Extender.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/Mycode/RegFile.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/Mycode/MUX5_2_1.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/Mycode/Fetch.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/Mycode/Control_Unit.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/Mycode/ALU.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/Inst_mem.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/DATA_RAM.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/Data_Flow.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/Computer.v" into library work
+Analyzing Verilog file "C:/Users/Lenovo/Desktop/singleCPU/computer_test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/Lenovo/Desktop/singleCPU/Data_Flow.v" Line 38: Port target_addr is not connected to this instance
+Completed static elaboration
+Compiling module Inst_mem
+Compiling module DATA_RAM
+Compiling module ADD32
+Compiling module Left_2_Shifter
+Compiling module MUX32_2_1
+Compiling module Fetch
+Compiling module Control
+Compiling module ALUop
+Compiling module Control_Unit
+Compiling module MUX5_2_1
+Compiling module RegFile
+Compiling module Sign_Extender
+Compiling module ALU
+Compiling module Data_Flow
+Compiling module MainBoard
+Compiling module computer_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 10 sub-compilation(s) to finish...
+Compiled 17 Verilog Units
+Built simulation executable C:/Users/Lenovo/Desktop/singleCPU/computer_test_isim_beh.exe
+Fuse Memory Usage: 28484 KB
+Fuse CPU Usage: 342 ms

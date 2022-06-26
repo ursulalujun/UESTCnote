@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/singleCPU/Computer.xst" -ofn "D:/singleCPU/Computer.syr" 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/singleCPU/Computer.xst" -ofn "C:/Users/Administrator/Desktop/singleCPU/Computer.syr" 

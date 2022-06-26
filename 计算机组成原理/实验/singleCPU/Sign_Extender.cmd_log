@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/singleCPU/Sign_Extender.xst" -ofn "D:/singleCPU/Sign_Extender.syr" 

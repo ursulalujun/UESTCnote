@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/singleCPU/Data_Flow.xst" -ofn "D:/singleCPU/Data_Flow.syr" 
+xst -intstyle ise -ifn "D:/singleCPU/Data_Flow.xst" -ofn "D:/singleCPU/Data_Flow.syr" 
+xst -intstyle ise -ifn "D:/singleCPU/Data_Flow.xst" -ofn "D:/singleCPU/Data_Flow.syr" 
+xst -intstyle ise -ifn "D:/singleCPU/Data_Flow.xst" -ofn "D:/singleCPU/Data_Flow.syr" 

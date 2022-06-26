@@ -1,0 +1,326 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: ADD32.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ADD32.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ADD32"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg484
+
+---- Source Options
+Top Module Name                    : ADD32
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\CPU\singleCPU\Mycode\ADD32.v" into library work
+Parsing module <ADD32>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ADD32>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ADD32>.
+    Related source file is "D:\CPU\singleCPU\Mycode\ADD32.v".
+    Found 32-bit adder for signal <result> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ADD32> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ADD32> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ADD32, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ADD32.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 96
+#      GND                         : 1
+#      LUT2                        : 32
+#      MUXCY                       : 31
+#      XORCY                       : 32
+# IO Buffers                       : 96
+#      IBUF                        : 64
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg484-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   32  out of  27288     0%  
+    Number used as Logic:                32  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     32
+   Number with an unused Flip Flop:      32  out of     32   100%  
+   Number with an unused LUT:             0  out of     32     0%  
+   Number of fully used LUT-FF pairs:     0  out of     32     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          96
+ Number of bonded IOBs:                  96  out of    320    30%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 6.181ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1552 / 32
+-------------------------------------------------------------------------
+Delay:               6.181ns (Levels of Logic = 35)
+  Source:            a<0> (PAD)
+  Destination:       result<31> (PAD)
+
+  Data Path: a<0> to result<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.684  a_0_IBUF (a_0_IBUF)
+     LUT2:I0->O            1   0.203   0.000  Madd_result_lut<0> (Madd_result_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Madd_result_cy<0> (Madd_result_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<1> (Madd_result_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<2> (Madd_result_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<3> (Madd_result_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<4> (Madd_result_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<5> (Madd_result_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<6> (Madd_result_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<7> (Madd_result_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<8> (Madd_result_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<9> (Madd_result_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<10> (Madd_result_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<11> (Madd_result_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<12> (Madd_result_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<13> (Madd_result_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<14> (Madd_result_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<15> (Madd_result_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<16> (Madd_result_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<17> (Madd_result_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<18> (Madd_result_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<19> (Madd_result_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<20> (Madd_result_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<21> (Madd_result_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<22> (Madd_result_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<23> (Madd_result_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<24> (Madd_result_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<25> (Madd_result_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<26> (Madd_result_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<27> (Madd_result_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<28> (Madd_result_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_result_cy<29> (Madd_result_cy<29>)
+     MUXCY:CI->O           0   0.019   0.000  Madd_result_cy<30> (Madd_result_cy<30>)
+     XORCY:CI->O           1   0.180   0.579  Madd_result_xor<31> (result_31_OBUF)
+     OBUF:I->O                 2.571          result_31_OBUF (result<31>)
+    ----------------------------------------
+    Total                      6.181ns (4.918ns logic, 1.263ns route)
+                                       (79.6% logic, 20.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.36 secs
+ 
+--> 
+
+Total memory usage is 257596 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

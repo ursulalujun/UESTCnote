@@ -1,0 +1,295 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml DATA_RAM.twx DATA_RAM.ncd -o DATA_RAM.twr DATA_RAM.pcf
+
+Design file:              DATA_RAM.ncd
+Physical constraint file: DATA_RAM.pcf
+Device,package,speed:     xc6slx45,csg484,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clock
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+addr<2>     |    1.231(R)|      SLOW  |    0.637(R)|      SLOW  |Clock_BUFGP       |   0.000|
+addr<3>     |    1.248(R)|      FAST  |    0.603(R)|      SLOW  |Clock_BUFGP       |   0.000|
+addr<4>     |    0.811(R)|      FAST  |    0.796(R)|      SLOW  |Clock_BUFGP       |   0.000|
+addr<5>     |    1.130(R)|      SLOW  |    0.675(R)|      SLOW  |Clock_BUFGP       |   0.000|
+addr<6>     |    0.840(R)|      FAST  |    0.898(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<0>   |    0.989(R)|      FAST  |   -0.390(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<1>   |    0.971(R)|      FAST  |   -0.261(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<2>   |    1.001(R)|      FAST  |   -0.446(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<3>   |    1.107(R)|      FAST  |   -0.386(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<4>   |    1.099(R)|      SLOW  |   -0.585(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<5>   |    1.018(R)|      FAST  |   -0.238(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<6>   |    0.760(R)|      FAST  |   -0.078(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<7>   |    1.049(R)|      FAST  |   -0.529(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<8>   |    1.104(R)|      FAST  |   -0.529(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<9>   |    0.974(R)|      FAST  |   -0.450(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<10>  |    1.186(R)|      FAST  |   -0.536(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<11>  |    1.025(R)|      SLOW  |   -0.512(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<12>  |    1.128(R)|      FAST  |   -0.436(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<13>  |    1.184(R)|      SLOW  |   -0.665(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<14>  |    1.306(R)|      FAST  |   -0.715(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<15>  |    0.932(R)|      FAST  |   -0.370(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<16>  |    1.198(R)|      FAST  |   -0.601(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<17>  |    0.908(R)|      FAST  |   -0.346(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<18>  |    0.982(R)|      FAST  |   -0.267(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<19>  |    0.610(R)|      FAST  |    0.026(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<20>  |    0.845(R)|      FAST  |   -0.048(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<21>  |    1.060(R)|      FAST  |   -0.533(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<22>  |    1.190(R)|      FAST  |   -0.537(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<23>  |    0.922(R)|      FAST  |   -0.369(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<24>  |    0.600(R)|      FAST  |    0.039(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<25>  |    0.703(R)|      FAST  |    0.178(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<26>  |    0.379(R)|      FAST  |    0.338(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<27>  |    0.565(R)|      FAST  |    0.291(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<28>  |    0.374(R)|      FAST  |    0.617(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<29>  |    0.768(R)|      FAST  |    0.106(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<30>  |    0.574(R)|      FAST  |    0.067(R)|      SLOW  |Clock_BUFGP       |   0.000|
+datain<31>  |    0.646(R)|      FAST  |    0.197(R)|      SLOW  |Clock_BUFGP       |   0.000|
+write       |    1.793(R)|      SLOW  |   -0.447(R)|      SLOW  |Clock_BUFGP       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock Clock to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+dataout<0>  |         7.771(R)|      SLOW  |         4.088(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<1>  |         7.672(R)|      SLOW  |         4.060(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<2>  |         7.727(R)|      SLOW  |         4.080(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<3>  |         7.911(R)|      SLOW  |         4.172(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<4>  |         7.852(R)|      SLOW  |         4.142(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<5>  |         7.883(R)|      SLOW  |         4.157(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<6>  |         7.954(R)|      SLOW  |         4.203(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<7>  |         7.902(R)|      SLOW  |         4.175(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<8>  |         8.068(R)|      SLOW  |         4.315(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<9>  |         8.060(R)|      SLOW  |         4.263(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<10> |         7.999(R)|      SLOW  |         4.232(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<11> |         8.140(R)|      SLOW  |         4.305(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<12> |         8.218(R)|      SLOW  |         4.408(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<13> |         7.936(R)|      SLOW  |         4.176(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<14> |         8.054(R)|      SLOW  |         4.245(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<15> |         8.022(R)|      SLOW  |         4.249(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<16> |         8.226(R)|      SLOW  |         4.349(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<17> |         8.257(R)|      SLOW  |         4.386(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<18> |         8.331(R)|      SLOW  |         4.422(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<19> |         8.518(R)|      SLOW  |         4.554(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<20> |         8.848(R)|      SLOW  |         4.783(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<21> |         8.449(R)|      SLOW  |         4.489(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<22> |         8.523(R)|      SLOW  |         4.525(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<23> |         8.469(R)|      SLOW  |         4.479(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<24> |         8.665(R)|      SLOW  |         4.610(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<25> |         8.720(R)|      SLOW  |         4.659(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<26> |         8.626(R)|      SLOW  |         4.595(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<27> |         8.762(R)|      SLOW  |         4.685(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<28> |         9.203(R)|      SLOW  |         4.944(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<29> |         8.709(R)|      SLOW  |         4.643(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<30> |         8.614(R)|      SLOW  |         4.578(R)|      FAST  |Clock_BUFGP       |   0.000|
+dataout<31> |         8.946(R)|      SLOW  |         4.822(R)|      FAST  |Clock_BUFGP       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+addr<2>        |dataout<0>     |    7.031|
+addr<2>        |dataout<1>     |    6.922|
+addr<2>        |dataout<2>     |    7.161|
+addr<2>        |dataout<3>     |    7.393|
+addr<2>        |dataout<4>     |    7.071|
+addr<2>        |dataout<5>     |    7.125|
+addr<2>        |dataout<6>     |    7.219|
+addr<2>        |dataout<7>     |    8.408|
+addr<2>        |dataout<8>     |    8.564|
+addr<2>        |dataout<9>     |    9.152|
+addr<2>        |dataout<10>    |    9.139|
+addr<2>        |dataout<11>    |    8.629|
+addr<2>        |dataout<12>    |    8.730|
+addr<2>        |dataout<13>    |    8.495|
+addr<2>        |dataout<14>    |    8.603|
+addr<2>        |dataout<15>    |    8.203|
+addr<2>        |dataout<16>    |    8.397|
+addr<2>        |dataout<17>    |    8.330|
+addr<2>        |dataout<18>    |    8.452|
+addr<2>        |dataout<19>    |    9.214|
+addr<2>        |dataout<20>    |    9.546|
+addr<2>        |dataout<21>    |    8.726|
+addr<2>        |dataout<22>    |    8.848|
+addr<2>        |dataout<23>    |    8.645|
+addr<2>        |dataout<24>    |    8.978|
+addr<2>        |dataout<25>    |    9.056|
+addr<2>        |dataout<26>    |    8.812|
+addr<2>        |dataout<27>    |    8.950|
+addr<2>        |dataout<28>    |    8.470|
+addr<2>        |dataout<29>    |    8.908|
+addr<2>        |dataout<30>    |    9.123|
+addr<2>        |dataout<31>    |    9.457|
+addr<3>        |dataout<0>     |    7.080|
+addr<3>        |dataout<1>     |    6.971|
+addr<3>        |dataout<2>     |    6.959|
+addr<3>        |dataout<3>     |    7.191|
+addr<3>        |dataout<4>     |    7.127|
+addr<3>        |dataout<5>     |    7.181|
+addr<3>        |dataout<6>     |    7.106|
+addr<3>        |dataout<7>     |    8.470|
+addr<3>        |dataout<8>     |    8.626|
+addr<3>        |dataout<9>     |    8.551|
+addr<3>        |dataout<10>    |    8.538|
+addr<3>        |dataout<11>    |    8.686|
+addr<3>        |dataout<12>    |    8.787|
+addr<3>        |dataout<13>    |    8.078|
+addr<3>        |dataout<14>    |    8.186|
+addr<3>        |dataout<15>    |    8.103|
+addr<3>        |dataout<16>    |    8.297|
+addr<3>        |dataout<17>    |    8.261|
+addr<3>        |dataout<18>    |    8.383|
+addr<3>        |dataout<19>    |    8.933|
+addr<3>        |dataout<20>    |    9.265|
+addr<3>        |dataout<21>    |    8.514|
+addr<3>        |dataout<22>    |    8.636|
+addr<3>        |dataout<23>    |    8.561|
+addr<3>        |dataout<24>    |    8.687|
+addr<3>        |dataout<25>    |    8.765|
+addr<3>        |dataout<26>    |    8.417|
+addr<3>        |dataout<27>    |    8.555|
+addr<3>        |dataout<28>    |    8.357|
+addr<3>        |dataout<29>    |    8.824|
+addr<3>        |dataout<30>    |    8.610|
+addr<3>        |dataout<31>    |    8.944|
+addr<4>        |dataout<0>     |    7.530|
+addr<4>        |dataout<1>     |    7.421|
+addr<4>        |dataout<2>     |    7.505|
+addr<4>        |dataout<3>     |    7.737|
+addr<4>        |dataout<4>     |    7.497|
+addr<4>        |dataout<5>     |    7.551|
+addr<4>        |dataout<6>     |    7.570|
+addr<4>        |dataout<7>     |    7.692|
+addr<4>        |dataout<8>     |    7.848|
+addr<4>        |dataout<9>     |    7.826|
+addr<4>        |dataout<10>    |    7.813|
+addr<4>        |dataout<11>    |    7.754|
+addr<4>        |dataout<12>    |    7.855|
+addr<4>        |dataout<13>    |    6.901|
+addr<4>        |dataout<14>    |    7.009|
+addr<4>        |dataout<15>    |    6.975|
+addr<4>        |dataout<16>    |    7.169|
+addr<4>        |dataout<17>    |    7.186|
+addr<4>        |dataout<18>    |    7.308|
+addr<4>        |dataout<19>    |    8.122|
+addr<4>        |dataout<20>    |    8.454|
+addr<4>        |dataout<21>    |    7.390|
+addr<4>        |dataout<22>    |    7.512|
+addr<4>        |dataout<23>    |    7.614|
+addr<4>        |dataout<24>    |    7.621|
+addr<4>        |dataout<25>    |    7.699|
+addr<4>        |dataout<26>    |    7.585|
+addr<4>        |dataout<27>    |    7.723|
+addr<4>        |dataout<28>    |    8.821|
+addr<4>        |dataout<29>    |    7.877|
+addr<4>        |dataout<30>    |    7.808|
+addr<4>        |dataout<31>    |    8.142|
+addr<5>        |dataout<0>     |    6.785|
+addr<5>        |dataout<1>     |    6.676|
+addr<5>        |dataout<2>     |    6.707|
+addr<5>        |dataout<3>     |    6.939|
+addr<5>        |dataout<4>     |    6.633|
+addr<5>        |dataout<5>     |    6.687|
+addr<5>        |dataout<6>     |    6.772|
+addr<5>        |dataout<7>     |    8.111|
+addr<5>        |dataout<8>     |    8.267|
+addr<5>        |dataout<9>     |    8.235|
+addr<5>        |dataout<10>    |    8.222|
+addr<5>        |dataout<11>    |    8.333|
+addr<5>        |dataout<12>    |    8.434|
+addr<5>        |dataout<13>    |    7.832|
+addr<5>        |dataout<14>    |    7.940|
+addr<5>        |dataout<15>    |    8.181|
+addr<5>        |dataout<16>    |    8.375|
+addr<5>        |dataout<17>    |    7.886|
+addr<5>        |dataout<18>    |    8.008|
+addr<5>        |dataout<19>    |    8.748|
+addr<5>        |dataout<20>    |    9.080|
+addr<5>        |dataout<21>    |    8.296|
+addr<5>        |dataout<22>    |    8.418|
+addr<5>        |dataout<23>    |    8.334|
+addr<5>        |dataout<24>    |    8.312|
+addr<5>        |dataout<25>    |    8.390|
+addr<5>        |dataout<26>    |    8.478|
+addr<5>        |dataout<27>    |    8.616|
+addr<5>        |dataout<28>    |    8.023|
+addr<5>        |dataout<29>    |    8.597|
+addr<5>        |dataout<30>    |    8.654|
+addr<5>        |dataout<31>    |    8.988|
+addr<6>        |dataout<0>     |    7.560|
+addr<6>        |dataout<1>     |    7.451|
+addr<6>        |dataout<2>     |    7.367|
+addr<6>        |dataout<3>     |    7.599|
+addr<6>        |dataout<4>     |    7.614|
+addr<6>        |dataout<5>     |    7.668|
+addr<6>        |dataout<6>     |    7.511|
+addr<6>        |dataout<7>     |    7.437|
+addr<6>        |dataout<8>     |    7.593|
+addr<6>        |dataout<9>     |    7.551|
+addr<6>        |dataout<10>    |    7.538|
+addr<6>        |dataout<11>    |    7.603|
+addr<6>        |dataout<12>    |    7.704|
+addr<6>        |dataout<13>    |    6.872|
+addr<6>        |dataout<14>    |    6.980|
+addr<6>        |dataout<15>    |    6.915|
+addr<6>        |dataout<16>    |    7.109|
+addr<6>        |dataout<17>    |    7.106|
+addr<6>        |dataout<18>    |    7.228|
+addr<6>        |dataout<19>    |    8.093|
+addr<6>        |dataout<20>    |    8.425|
+addr<6>        |dataout<21>    |    7.487|
+addr<6>        |dataout<22>    |    7.609|
+addr<6>        |dataout<23>    |    7.512|
+addr<6>        |dataout<24>    |    7.841|
+addr<6>        |dataout<25>    |    7.919|
+addr<6>        |dataout<26>    |    7.559|
+addr<6>        |dataout<27>    |    7.697|
+addr<6>        |dataout<28>    |    8.762|
+addr<6>        |dataout<29>    |    7.775|
+addr<6>        |dataout<30>    |    7.590|
+addr<6>        |dataout<31>    |    7.924|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Jun 06 14:49:52 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 262 MB
+
+
+

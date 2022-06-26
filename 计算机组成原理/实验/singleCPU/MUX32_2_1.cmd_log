@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/CPU/singleCPU/MUX32_2_1.xst" -ofn "D:/CPU/singleCPU/MUX32_2_1.syr" 

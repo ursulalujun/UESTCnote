@@ -1,0 +1,3 @@
+verilog work "Mycode/Control.v"
+verilog work "Mycode/ALUop.v"
+verilog work "Mycode/Control_Unit.v"

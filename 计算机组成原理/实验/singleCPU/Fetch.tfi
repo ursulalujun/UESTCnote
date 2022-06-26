@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+Fetch instance_name (
+    .B(B), 
+    .Z(Z), 
+    .J(J), 
+    .Reset(Reset), 
+    .Clock(Clock), 
+    .target(target), 
+    .B_addr(B_addr), 
+    .addr(addr)
+    );
+
+
