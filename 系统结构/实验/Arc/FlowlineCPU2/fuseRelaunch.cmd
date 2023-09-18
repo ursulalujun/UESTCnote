@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Administrator/Desktop/FlowlineCPU4/SSCPU_test_isim_beh.exe" -prj "C:/Users/Administrator/Desktop/FlowlineCPU4/SSCPU_test_beh.prj" "work.SSCPU_test" "work.glbl" 

@@ -1,0 +1,58 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Administrator/Desktop/FlowlineCPU4/SSCPU_test_isim_beh.exe -prj C:/Users/Administrator/Desktop/FlowlineCPU4/SSCPU_test_beh.prj work.SSCPU_test work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/Regfile.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/mux5_2_1.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/mux32_4_1.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/mux32_2_1.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/Inst_ROM.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/dff32.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/Control_Unit.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/alu.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/add32.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/WB_STAGE.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/MEM_WB.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/MEM_STAGE.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/IF_STAGE.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/IF_ID.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/ID_STAGE.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/ID_EXE.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/EXE_STAGE.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/EXE_MEM.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/SCCPU.v" into library work
+Analyzing Verilog file "C:/Users/Administrator/Desktop/FlowlineCPU4/SSCPU_test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/Administrator/Desktop/FlowlineCPU4/SCCPU.v" Line 113: Size mismatch in connection of port <addr>. Formal port size is 32-bit while actual signal size is 5-bit.
+Completed static elaboration
+Fuse Memory Usage: 101928 KB
+Fuse CPU Usage: 156 ms
+Compiling module dff32
+Compiling module add32
+Compiling module mux32_4_1
+Compiling module Inst_ROM
+Compiling module IF_STAGE
+Compiling module IF_ID
+Compiling module Control_Unit
+Compiling module Regfile
+Compiling module mux5_2_1
+Compiling module ID_STAGE
+Compiling module ID_EXE
+Compiling module mux32_2_1
+Compiling module alu
+Compiling module EXE_STAGE
+Compiling module EXE_MEM
+Compiling module MEM_STAGE
+Compiling module MEM_WB
+Compiling module WB_STAGE
+Compiling module SCCPU
+Compiling module SSCPU_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 11 sub-compilation(s) to finish...
+Compiled 21 Verilog Units
+Built simulation executable C:/Users/Administrator/Desktop/FlowlineCPU4/SSCPU_test_isim_beh.exe
+Fuse Memory Usage: 107544 KB
+Fuse CPU Usage: 233 ms
